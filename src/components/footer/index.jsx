@@ -1,11 +1,19 @@
 import {FiAlertTriangle} from 'react-icons/fi'
 import {BsFacebook, BsInstagram , BsTwitter, BsYoutube} from 'react-icons/bs'
+import { useNavigate } from 'react-router'
+
+import { Button } from '@material-tailwind/react'
 function Footer(){
+    const navigate = useNavigate()
+    const handleClick = () => {
+        navigate('/DenuncieAqui')
+    }
+
     return(
         <footer className='bg-header h-52 flex align-middle justify-around'>
             <div className='flex flex-col p-6 gap-2'>
             <FiAlertTriangle size={64}></FiAlertTriangle>
-            <h1 className='font-bold font-montserrat'>Denuncie aqui!</h1>
+            <Button className='font-bold font-montserrat' onClick={handleClick}>Denuncie aqui!</Button>
             </div>  
             <div className='flex font-montserrat text-white p-6 flex-col gap-5'>
                 <h1>Empresa</h1>
