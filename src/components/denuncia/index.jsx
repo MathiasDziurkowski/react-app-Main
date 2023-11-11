@@ -1,11 +1,12 @@
-import { Card, CardBody } from "@material-tailwind/react"
+import { Button, Card, CardBody } from "@material-tailwind/react"
 
 function Denuncia(){
     return(
         <>
-        <div className="p-6">
-        <Card className="flex flex-col">Para realizar a denúncia, siga os seguintes passos </Card>
-        <CardBody>
+        <div className="m-6 p-6 flex rounded-xl bg-denuncia/50 justify-around items-center">
+            <div>
+        <Card className="flex-col bg-white">Para realizar a denúncia, siga os seguintes passos </Card>
+        <CardBody className="bg-white">
             <ul>
                 <li>Identifique a entidade apropriada para a denúncia, como polícia, agência reguladora ou ONG.</li>
                 <li>Reúna informações relevantes sobre a situação.</li>
@@ -17,6 +18,8 @@ function Denuncia(){
                 <li>Esteja ciente das proteções legais contra retaliação, se aplicável em sua região.</li>
             </ul>
         </CardBody>
+        </div>
+        <Button className="bg-black">Acesse aqui</Button>
         </div>
         </>
     )

@@ -12,6 +12,11 @@ module.exports = withMT({
     },
     colors: {
       'header' : '#6DAEDB',
+    },
+    backgroundColor:{
+      'denuncia': '#6DAEDB',
+      'black': '#000000',
+      'white': '#FAFAFA',
     }
   },
     extend: {
