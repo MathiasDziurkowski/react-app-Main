@@ -6,7 +6,7 @@ function Denuncia(){
         <div className="m-6 p-6 flex rounded-xl bg-denuncia/50 justify-around items-center">
             <div>
         <Card className="flex-col bg-white">Para realizar a denúncia, siga os seguintes passos </Card>
-        <CardBody className="bg-white">
+        <CardBody className="bg-white rounded-xl">
             <ul>
                 <li>Identifique a entidade apropriada para a denúncia, como polícia, agência reguladora ou ONG.</li>
                 <li>Reúna informações relevantes sobre a situação.</li>
